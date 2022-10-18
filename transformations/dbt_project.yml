@@ -1,16 +1,16 @@
 # Name and version of this dbt project.
-name: 'devkit_connector'
+name: 'template_one_demo'
 version: '0.3.0'
 require-dbt-version: [">=1.0.0", "<2.0.0"]
 config-version: 2
 
 # This setting configures which "profile" dbt uses for this project.
-profile: 'devkit_connector'
+profile: 'template_one_demo'
 
 # Configuration of variables that are used in this dbt project.
 vars:
    # Name of the schema where the raw input data is stored.
-  schema_sources: "devkit_connector"
+  schema_sources: "template_one_schema_sql"
 
 # These configurations specify where dbt should look for different types of files.
 model-paths: ["models"]
