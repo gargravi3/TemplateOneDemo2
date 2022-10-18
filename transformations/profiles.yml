@@ -1,15 +1,16 @@
-devkit_connector:
+template_one_demo:
   outputs:
 
     sqlserver:
       type: sqlserver
       driver: 'ODBC Driver 17 for SQL Server'
-      server: 
+      server: localhost
       port: 1433
-      user:
-      password:
-      database:
-      schema: "devkit_connector"
+      database: TemplateOneSql
+      schema: Template_one_schema_sql
+      trusted_connection: True
+      trust_cert: True
+
 
     snowflake:
       type: snowflake
